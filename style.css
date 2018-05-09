@@ -1,0 +1,186 @@
+* {
+  font-family: monospace;
+  font-size: 16px;
+}
+/*
+*
+Header Styling
+*
+*/
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  border-bottom: 3px solid maroon;
+}
+
+.logo-block {
+  width: 50%;
+  margin: auto;
+}
+
+.logo {
+  width: 50%;
+  }
+
+.name-block {
+  margin: auto;
+}
+
+/*
+*
+H Tag Styling
+*
+*/
+
+h1 {
+  font-weight: bolder;
+  font-size: 2.5em;
+  color: maroon;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 26px;
+  color: maroon;
+  text-align: center;
+}
+
+h3 {
+  font-weight: lighter;
+}
+
+/*
+*
+Nav Styling
+*
+*/
+
+/* .nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(217, 221, 249, 0.2);
+} */
+
+/* ul {
+  list-style: none;
+  padding: 1.5em;
+  margin: 0;
+} */
+
+/* .nav-menu {
+  width: 100%;
+}
+
+.link {
+  box-sizing: border-box;
+  display: inline-flex;
+  padding: 15px 20px;
+  font-size: 16px;
+  text-align: center;
+} */
+
+/*
+*
+Page-Wide Links Styling
+*
+*/
+
+a {
+  text-decoration: none;
+  padding: 1.5em;
+  cursor: pointer;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/*
+*
+Content Styling
+*
+*/
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.bio {
+  max-width: 80%;
+  margin: auto;
+  /* float: right; */
+  text-align: justify;
+}
+
+.me {
+  padding: 15px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.featured {
+  border-top: 2px solid maroon;
+  padding-top: 30px;
+}
+
+.featured, .work {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.work {
+  border-style: outset;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 5px grey;
+}
+
+/*
+*
+Footer Styling
+*
+*/
+
+footer {
+  padding: 25px;
+  text-align: center;
+}
+/*
+*
+Media Queries
+*
+*/
+
+@media screen and (max-width: 500px;) {
+  h1 {
+    font-size: 1em;
+  }
+  }
+
+@media screen and (max-width: 719px) {
+    .featured, .example, .work {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  main, header {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+
+
+/* Referenced https://www.w3schools.com, https://developer.mozilla.org/en-US/docs/Web/CSS/Reference, http://jonibologna.com/content/images/flexboxsheet.pdf, and Udacity/GWG coursework to build this website. Images are my own, Mario pixel art based on Mario Bros by Nintendo, and fox image in tradig card via Wikimedia Commons. */
